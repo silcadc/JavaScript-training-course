@@ -30,7 +30,8 @@
     </section>
 
     <section>
-        <h2>Calcula el área y perímetro de un triángulo</h2>
+        <h2>Calcula el perímetro, área y la altura de un triángulo</h2>
+        <h3>Calcula el perímetro de un triángulo</h3>
         <form>
             <label for="inputTriangulo1">
                 Escribe cuánto mide el primer lado de tu triángulo
@@ -52,6 +53,7 @@
             </button>
         </form>
 <br><br>
+        <h3>Calcula el área de un triángulo</h3>
         <form>
             <label for="inputTrianBase">
                 Escribe cuánto mide la base de tu triángulo
@@ -69,6 +71,28 @@
                 Calcular el área
             </button>
         </form>
+<br><br>
+<h3>Calcula la altura de un triángulo</h3>
+    <form>
+        <label for="inputTrianguloIsosceles1">
+            Escribe cuánto mide el primer lado de tu triángulo
+        </label>
+        <input id="inputTrianguloIsosceles1" type="number">
+        <br> <br>
+        <label for="inputTrianguloIsosceles2">
+            Escribe cuánto mide el segundo lado de tu triángulo
+        </label>
+        <input id="inputTrianguloIsosceles2" type="number">
+        <br><br>
+        <label for="inputTrianguloIsoscelesBase">
+            Escribe cuánto mide la base de tu triángulo
+        </label>
+        <input id="inputTrianguloIsoscelesBase" type="number">
+        <br><br>
+        <button type="button" onclick="calcularAlturaTriangulo()">
+            Calcular la altura
+        </button>
+    </form>
     </section>
 
     <section>

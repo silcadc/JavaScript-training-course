@@ -6,7 +6,7 @@ function perimetroCuadrado(lado) {
 } 
 
 function areaCuadrado(lado) {
-    return lado * lado;
+    return lado**2;
 }
 console.groupEnd();
 
@@ -19,6 +19,13 @@ function perimetroTriangulo(lado1, lado2, base) {
 function areaTriangulo(base, altura) {
     return (base * altura) / 2
 } 
+
+function alturaTriangulo(lado1, base) {
+    let dataPythagoras = lado1**2 - (base**2) / 4;
+    //Math.sqrt es una funcion que permite calcular las raices cuadradas
+    Math.sqrt(dataPythagoras);
+    return Math.sqrt(dataPythagoras);
+}
 console.groupEnd();
 
 // Código del círculo
@@ -38,7 +45,7 @@ function perimetroCirculo(radio) {
 
 //Área
 function areaCirculo(radio) {
-    return (radio * radio) * PI;
+    return (radio**2) * PI;
 }
 console.groupEnd();
 
@@ -86,6 +93,22 @@ function calcularAreaTriangulo() {
     const area = areaTriangulo(valueBase, valueAltura);
     alert(area);
 } 
+
+function calcularAlturaTriangulo() {
+    const isosceleLado1 = document.getElementById("inputTrianguloIsosceles1");
+    let isoValue1 = parseInt(isosceleLado1.value);
+   
+    const isosceleLado2 = document.getElementById("inputTrianguloIsosceles2");
+    let isoValue2 = parseInt(isosceleLado2.value);
+    
+    const isosceleBase = document.getElementById("inputTrianguloIsoscelesBase");
+    let valueBase = parseInt(isosceleBase.value);
+   
+    if (isoValue1 === isoValue2) {
+        const altura = alturaTriangulo(isoValue1, valueBase);
+        alert(altura);
+    }
+}
 
 // Código del círculo
 
