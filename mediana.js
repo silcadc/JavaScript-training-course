@@ -37,7 +37,7 @@ function esPar(numerito) {
 
 let mediana;
 
-function medianaLista(lista){
+function calcularMediana(lista){
     let listaOrdenada = lista.sort((a, b) => a - b);//con este argumento extra en la function .sort
     //podemos evitar que organice con algunos errores los datos.
     console.log(listaOrdenada);
